@@ -1,0 +1,242 @@
+*{ /*selector universal*/
+	/*padding: 10px;
+	margin: 10px;
+	border: 2px solid red;*/
+}
+
+body{
+	font-family: 'Allerta', sans-serif;
+	margin: 0;
+}
+
+.contenedor{
+	width: 800px;
+	margin: auto;
+	position: relative;	
+}
+
+.background{
+	background-image: url('../images/background.png');
+	background-size: cover;
+}
+
+table{
+	width: 100%;
+
+}
+th{
+	background: #273b47;
+	color: white;
+	padding: 10px 20px;
+	text-align:left;
+}
+
+td{
+	padding: 20px;
+}
+
+table, td, th{
+	border: 1px solid #273b47;
+	border-collapse: collapse;
+}
+
+input, textarea{
+	outline: 0;
+}
+input:focus, textarea:focus{
+	background-color: lightgray;
+}
+
+.button{
+	border-radius: 12px;
+	border:none;
+	color: white;
+	padding: 7px 12px;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 18px;
+	/*background-color: #fd324e;
+	background: linear-gradient(to left, #fe344e, #ff7250);*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f85032+0,f16f5c+50,f6290c+54,f02f17+71,e73827+100 */
+	background: rgb(248,80,50); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 54%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 54%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 54%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
+
+}
+.titulo{
+	font-size: 70px;
+	margin-bottom: 15px;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 0;
+	margin-top: 70px;
+}
+
+.titulo span{
+	text-decoration: underline;
+}
+
+.title-a{
+	/*background: yellow;*/
+	font-size: 24px;
+	margin-top: 0;
+}
+
+.title-b{
+	/*background: salmon;*/
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.guitarras{
+	color: #1f313c;
+	margin-bottom: 60px !important;
+}
+.guitarras h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+}
+
+.portada{
+	color: white;
+	padding: 20px;
+	height: 500px;
+	
+}
+.portada button{
+	margin-bottom: 70px;
+}
+
+.logotipo{
+	display: inline-block;
+	margin-left: 0;
+}
+.menu{
+	font-size: 24px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+.menu li{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.menu li:before{
+	content: '°';
+	font-size: 20px;
+	line-height: 20px;
+	color: white;
+}
+.menu a{
+	color: white;
+	text-decoration: none;
+
+}
+
+
+.guitarra{
+	padding: 10px 10px 30px 10px;
+	margin: 10px;
+	/*overflow: hidden;*/
+	border: 1px solid #1f313c;
+	border-radius: 8px;
+}
+.guitarra ol{
+	padding: 0;
+}
+.guitarra.b{ /*los que tengan estas 2 clases*/
+	height: 190px;
+}
+
+.derecha{
+	float: right;
+	position: relative;
+	top: -127px; /*bottom: 127*/
+
+}
+.izquierda{
+	float: left;
+	position: relative;
+	
+}
+
+.contenedor-guitarra-a{
+	padding-left: 20px;
+}
+.contenedor-guitarra-b{
+	margin-left: 370px;
+	position: relative;
+	bottom: 90px;
+}
+.header{
+	position: relative;
+}
+
+.footer{
+	background-color: #273b47;
+	padding: 50px 10px;
+}
+.contacto img{
+	display: block;
+
+}
+.contacto strong{
+	display: block;
+
+}
+.contacto a{
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px 10px 0;
+}
+.footer .contenedor{
+	display: flex;
+	justify-content: space-between;
+
+}
+.contacto{
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.formulario{
+	display: flex;
+	width: 400px;
+	color: white;
+	padding: 50px 10px;
+}
+
+.col1, .col2{
+	display: flex;
+	flex-direction: column;
+}
+
+.col1{
+	margin-right: 15px;
+}
+.col2{
+	align-items: flex-start;
+
+}
+.col2 button{
+	margin-top: 15px;
+}
+.intereses label{
+	font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses {
+	margin-bottom: 10px;
+}
+
+.sexo{
+	margin-top: 10px;
+}
+
+.tabla{
+	margin: 50px 0;
+}
