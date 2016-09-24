@@ -5,17 +5,19 @@
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/invie.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 	<style type="text/css">
 		
 	</style>
 </head>
-<body>
+<body class="precios">
 	<header id="header" style="" class="header background"><!-- header -->
 		<div class="contenedor">
-			<figure class="logotipo"><!-- logotipo -->	
+			<figure class="logotipo"><!-- logotipo -->
 			<img src="images/invie.png" width="186" height="60" alt="Invite logotipo">
 		</figure>
-		<nav class="menu"><!-- menu -->
+		<span class="burger-button icon-menu" id="burger-button"></span>
+		<nav class="menu" id="menu"><!-- menu -->
 			<ul>
 				<li>
 					<a href="index.html"> Home</a>
@@ -38,6 +40,9 @@
 					<th>Modelo</th>
 					<th>Precio</th>
 					<th>Descripción</th>
+					<th>Modelo</th>
+					<th>Precio</th>
+					<th>Descripción</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -45,13 +50,22 @@
 					<td>Invie Classic</td>
 					<td>$1000</td>
 					<td>Una guitarra muy pro</td>
-				</tr>
-				<tr>
 					<td>Invie Classic</td>
 					<td>$1000</td>
 					<td>Una guitarra muy pro</td>
 				</tr>
 				<tr>
+					<td>Invie Classic</td>
+					<td>$1000</td>
+					<td>Una guitarra muy pro</td>
+					<td>Invie Classic</td>
+					<td>$1000</td>
+					<td>Una guitarra muy pro</td>
+				</tr>
+				<tr>
+					<td>Invie Classic</td>
+					<td>$1000</td>
+					<td>Una guitarra muy pro</td>
 					<td>Invie Classic</td>
 					<td>$1000</td>
 					<td>Una guitarra muy pro</td>
@@ -105,5 +119,42 @@
 					
 			</div>
 		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
+		<script>
+			
+			var consulta = window.matchMedia('(max-width: 800px)');
+			consulta.addListener(mediaQuery);
+
+			var $burgerButton = document.getElementById('burger-button');
+			var $menu = document.getElementById('menu');
+			function toggleMenu(){
+				$menu.classList.toggle('active');
+			}
+
+			function mediaQuery(){
+					if (consulta.matches) {
+					console.log('se cumplio la condición');
+					$burgerButton.addEventListener('touchstart', toggleMenu);
+				} else {
+					$burgerButton.addEventListener('touchstart', toggleMenu);
+					console.log('NO se cumplio la condición');
+				}	
+			}
+			mediaQuery();
+			//$burgerButton.addEventListener('click',function(){
+			/*$burgerButton.addEventListener('touchstart',function(){
+				//$menu.classList.add('active');
+				//$menu.classList.remove('active');
+				$menu.classList.toggle('active');
+			});*/
+			
+			////////////////////////////////////////////////////////////////////////////////
+			//lazy loading de img//
+			//be lazy.js//
+			//https://cdnjs.com/
+			var bLazy = new Blazy({
+    		selector:'img'
+			});
+		</script>
 </body>
 </html>
